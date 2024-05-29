@@ -14,7 +14,7 @@ port (
 end relojdigitalv1;
 
 architecture relojito of relojdigitalv1 is
-  constant max_tictac: INTEGER := 2; -- 50000000/2 ---flancos 10 para simu og 25000000
+  constant max_tictac: INTEGER := 2; -- 25000000/2 ---flancos 10 o 2 para simular orig 25000000
   signal tictac: INTEGER range 0 to max_tictac;--cuentaflancos
   signal clk_state: STD_LOGIC := '0';--bit de segundo
   shared variable hora1, hora2, min1, min2: INTEGER range 0 to 10 := 0; 
